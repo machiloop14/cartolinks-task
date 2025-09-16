@@ -1,3 +1,4 @@
+import Slider from "@/components/slider";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
@@ -38,10 +39,12 @@ export default function Index() {
         </LinearGradient>
       </View>
       <View className="px-4">
-        <Text className="mt-6 text-white text-xl font-psemibold">
+        <Text className="my-6 text-white text-xl font-psemibold">
           What type of posters do you want to create?
         </Text>
       </View>
+
+      <Slider />
 
       <StatusBar style="light" backgroundColor="black" />
     </SafeAreaView>
