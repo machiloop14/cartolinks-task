@@ -19,7 +19,9 @@ export default function Index() {
           className="pb-[3px] flex w-1/2 items-center" // padding = border thickness
         >
           <View className="bg-black w-full flex items-center">
-            <Text className="text-lg text-white font-bold">Smart script</Text>
+            <Text className="text-lg text-white font-bold pb-3">
+              Smart script
+            </Text>
           </View>
         </LinearGradient>
 
@@ -31,9 +33,14 @@ export default function Index() {
           className="pb-[3px] flex w-1/2 items-center" // padding = border thickness
         >
           <View className="bg-black w-full flex items-center">
-            <Text className="text-lg text-gray-300">Advanced script</Text>
+            <Text className="text-lg text-gray-300 pb-3">Advanced script</Text>
           </View>
         </LinearGradient>
+      </View>
+      <View className="px-4">
+        <Text className="mt-6 text-white text-xl font-psemibold">
+          What type of posters do you want to create?
+        </Text>
       </View>
 
       <StatusBar style="light" backgroundColor="black" />
