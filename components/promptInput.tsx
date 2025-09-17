@@ -6,7 +6,7 @@ const PromptInput = () => {
   const [userPrompt, setUserPrompt] = useState<string | undefined>("");
 
   return (
-    <View className="bg-[#161819] mx-4 mt-5 flex rounded-md p-3 gap-2">
+    <View className="bg-[#161819] mx-4 mt-5 flex rounded-xl p-3 gap-2">
       <View className="w-[90%]">
         <TextInput
           value={userPrompt}

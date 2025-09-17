@@ -1,11 +1,11 @@
+import PromptInput from "@/components/promptInput";
+import Settings from "@/components/settings";
 import Slider from "@/components/slider";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-import PromptInput from "@/components/promptInput";
 
 export default function Index() {
   return (
@@ -56,6 +56,9 @@ export default function Index() {
 
       {/* prompt input component */}
       <PromptInput />
+
+      {/* settings component */}
+      <Settings />
 
       <StatusBar style="light" backgroundColor="black" />
     </SafeAreaView>
