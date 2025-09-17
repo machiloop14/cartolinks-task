@@ -5,12 +5,17 @@ import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import PromptInput from "@/components/promptInput";
+
 export default function Index() {
   return (
     <SafeAreaView className="flex-1 pt-12  bg-black">
+      {/* close icon */}
       <View className="pl-4 flex">
         <Ionicons name="close" size={32} color="#fff" />
       </View>
+
+      {/* tabs component */}
       <View className="flex flex-row w-full mt-10 border-b border-b-gray-800 px-4">
         <LinearGradient
           colors={["#0aadc9", "#705cfe"]} // gradient colors
@@ -38,13 +43,19 @@ export default function Index() {
           </View>
         </LinearGradient>
       </View>
+
+      {/* header */}
       <View className="px-4">
         <Text className="my-6 text-white text-xl font-psemibold">
           What type of posters do you want to create?
         </Text>
       </View>
 
+      {/* carousel */}
       <Slider />
+
+      {/* prompt input component */}
+      <PromptInput />
 
       <StatusBar style="light" backgroundColor="black" />
     </SafeAreaView>
