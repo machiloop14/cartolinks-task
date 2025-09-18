@@ -4,7 +4,7 @@ import Slider from "@/components/slider";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -52,13 +52,17 @@ export default function Index() {
       </View>
 
       {/* carousel */}
-      <Slider />
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Slider />
 
-      {/* prompt input component */}
-      <PromptInput />
+        {/* prompt input component */}
+        <PromptInput />
 
-      {/* settings component */}
-      <Settings />
+        {/* settings component */}
+        <Settings />
+
+        {/* Generate button component */}
+      </ScrollView>
 
       <StatusBar style="light" backgroundColor="black" />
     </SafeAreaView>

@@ -25,7 +25,7 @@ const Slider = () => {
           <Image
             source={item}
             className="w-full h-full rounded-xl"
-            // className={`${isSelected ? "border-white border-2 p-2" : "border-0"} w-full h-full rounded-xl`}
+            style={{ width: "100%", height: "100%" }}
             contentFit="cover"
           />
         </View>
