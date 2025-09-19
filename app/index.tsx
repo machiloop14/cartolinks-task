@@ -1,3 +1,4 @@
+import GenerateButton from "@/components/generateButton";
 import PromptInput from "@/components/promptInput";
 import Settings from "@/components/settings";
 import Slider from "@/components/slider";
@@ -62,6 +63,7 @@ export default function Index() {
         <Settings />
 
         {/* Generate button component */}
+        <GenerateButton />
       </ScrollView>
 
       <StatusBar style="light" backgroundColor="black" />
