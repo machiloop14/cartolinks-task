@@ -10,10 +10,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-    <SafeAreaView className="flex-1 pt-12  bg-black">
+    <SafeAreaView className="flex-1 pt-8  bg-black">
       {/* close icon */}
       <View className="pl-4 flex">
-        <Ionicons name="close" size={32} color="#fff" />
+        <Ionicons name="close" size={38} color="#fff" />
       </View>
 
       {/* tabs component */}
@@ -53,7 +53,7 @@ export default function Index() {
       </View>
 
       {/* carousel */}
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false} className="mb-4">
         <Slider />
 
         {/* prompt input component */}
@@ -63,8 +63,8 @@ export default function Index() {
         <Settings />
 
         {/* Generate button component */}
-        <GenerateButton />
       </ScrollView>
+      <GenerateButton />
 
       <StatusBar style="light" backgroundColor="black" />
     </SafeAreaView>

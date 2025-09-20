@@ -11,7 +11,7 @@ const images = [
 ];
 
 const Slider = () => {
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(0);
 
   const renderPoster: ListRenderItem<number> = ({ item, index }) => {
     const isSelected = selectedIndex === index;
@@ -42,7 +42,7 @@ const Slider = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         initialNumToRender={3}
-        contentContainerStyle={{ gap: 8 }}
+        contentContainerStyle={{ gap: 8, paddingRight: 8 }}
       />
     </View>
   );

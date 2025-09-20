@@ -9,11 +9,12 @@ const PromptInput = () => {
     <View className="bg-[#161819] mx-4 mt-5 flex rounded-xl p-3 gap-2">
       <View className="w-[90%]">
         <TextInput
+          // editable={false}
           value={userPrompt}
           onChangeText={(text) => setUserPrompt(text)}
-          className="outline-none h-36 text-[15px] text-white font-pregular"
+          className="outline-none h-36 text-[17px] text-white font-pregular"
           multiline={true}
-          placeholder="stunning promotional image of a deliciously decorated cake, emphasizing its layers, frosting, and toppings in an enticing setting"
+          placeholder="stunning promotional image of a deliciously decorated cake, emphasizing its layers, frosting, and toppings in an enticing setting."
           placeholderTextColor="white"
         />
       </View>

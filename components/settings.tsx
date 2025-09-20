@@ -5,7 +5,9 @@ import { Text, View } from "react-native";
 const Settings = () => {
   return (
     <View className="px-4 mt-6">
-      <Text className="text-[#919093] font-pregular mb-2">Settings</Text>
+      <Text className="text-[#919093] font-pregular mb-2 text-lg">
+        Settings
+      </Text>
       <View className="bg-[#161819] px-4 rounded-md">
         <View className="flex flex-row justify-between border-b border-[#1F2122] py-4">
           <Text className="text-white font-pregular">Size</Text>
